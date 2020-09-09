@@ -1,7 +1,7 @@
 dictionary() {
     if [ "$#" -ne 1 ]; then
         echo "1 parameter required"
-        exit 1
+        return 1
     fi
 
     local word=$1
@@ -12,7 +12,7 @@ dictionary() {
 weather() {
     if [ "$#" -ne 1 ]; then
         echo "1 parameter required"
-        exit 1
+        return 1
     fi
 
     local city=$1
